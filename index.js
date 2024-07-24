@@ -22,7 +22,7 @@ app.set('views',path.join(path.resolve(),'/src','/views'));// src/views
 
 // app.use(express.static(path.join(path.resolve(),'public')));
 // app.set('style',path.join(path.resolve(),'src','public','style'));
-app.use('/',UserRouter)
+app.use('/',UserRouter);
 app.use('/list',ListRouter);
 // app.use(express.static(path.join(path.resolve(),'public')));
 export default app;

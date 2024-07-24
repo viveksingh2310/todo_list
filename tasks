@@ -1,0 +1,6 @@
+we have to make the following views inside the views folder
+
+error.ejs
+register.ejs
+login.ejs
+list.ejs
