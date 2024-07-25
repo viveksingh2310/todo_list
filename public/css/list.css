@@ -1,21 +1,35 @@
-.inner-content-div{
-    background-color:red;
-    border-style:solid;
-    border-color:black;
-    border-width: 9px;
+.head{
+    /* background-color:red; */
+    height:20vh;
+    font-size:50px;
+    font-weight:500;
+    text-align:start;
+    padding-top:5vh;
+    }
+.my-day-list{
+    margin-top:3.5vh;
 }
-.inner-head{
-    background-color:red;
-    border-style:solid;
-    border-color:black;
-    border-width: 9px;
+.todo-list-items{
+    /* margin-top:1vh; */
+    /* padding-left:10px; */
+    /* display:flex; */
+    height:8vh;
+   background-color:rgb(196, 199, 121);
+   border-radius:8px;
+   padding:2vh;
+   /* justify-items: center; */
 }
-.container{
-    background-color:red;
-    border-style:solid;
-    border-color:black;
-    border-width: 9px;
+.todo-item-check{
+    margin-left:10px;
+    margin-top:10px;
+    /* padding-top:10px; */
 }
-.header-row{
-    background-color:lightgreen
+.todo-item{
+    height:5vh;
+}
+.todo-item-content{
+    width:65vw;
+    height:50px;
+    padding-top:10px;
+    cursor: pointer;
 }

@@ -1,7 +1,11 @@
+
 .side-section{
-    background-color:lightcyan;
+    background-color:rgb(219, 255, 255);
     height:100vh;
+    border-top-right-radius:40px ;
+    border-bottom-right-radius:40px ;
     width:25vw;
+    display:block;
 
 }
 .user-profile{
@@ -33,6 +37,8 @@ font-family: 'Nunito Sans';
     flex-direction:column;
     justify-content:center;
     /* align-items: center; */
+  
+    background-color:rgb(187, 230, 255);
 }
 .options-section>a{
     height:80px;
@@ -45,13 +51,8 @@ font-family: 'Nunito Sans';
 
 }
 .options-section>a:hover{
-    background-color:rgb(255, 223, 223);
-    transition:all 0.4s ease-in-out;
-    /* transition-delay:0.3s;
-    transition-property: fade;
-    transition-timing-function: ease-in-out; */
-
-}
+    background-color:rgb(242, 255, 219);
+    transition:all 0.4s ease-in-out;}
 .list-items-info{
     /* display:flex; */
     /* justify-content: center;
@@ -60,4 +61,40 @@ font-family: 'Nunito Sans';
     text-align: center;
     text-justify: center;
     vertical-align: center;
+}
+.list-display{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    /* background-color:rgb(187, 230, 255); */
+}
+.list-display>a{
+    text-decoration: none;
+    color:black;
+    margin-top:3vh;
+}
+.lists{
+    /* background-color:lightgreen; */
+    width:100%;
+    text-align: center;
+}
+.add-container{
+    position:fixed;
+    /* background-color:rgb(187, 230, 255); */
+    /* background-color:lightgoldenrodyellow; */
+    bottom:0px;
+    width:inherit;
+    bottom:0px;
+    /* left:7vw; */
+     display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+
+}
+.add-btn{
+   width:100%;
+   display:inline-block;
+   margin:0px 10px;
 }
