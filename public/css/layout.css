@@ -1,0 +1,63 @@
+.side-section{
+    background-color:lightcyan;
+    height:100vh;
+    width:25vw;
+
+}
+.user-profile{
+    height:60px;
+    width:60px;
+    margin-top:3%;
+    border-radius:50%;
+}
+.user-info>a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-name{
+    display:inline;
+    text-decoration: none;
+    /* text-underline-offset:none; */
+    font-size: 30px;
+    text-transform: capitalize;
+    color:black;
+    font-weight: 700;
+}
+.username-a{
+text-decoration:none;
+font-family: 'Nunito Sans';
+}
+.options-section{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    /* align-items: center; */
+}
+.options-section>a{
+    height:80px;
+    /* margin:-18px 0px; */
+    text-decoration: none;
+    color:black;
+    font-family: 'Nunito Sans';
+    font-size:22px;
+    vertical-align:center;
+
+}
+.options-section>a:hover{
+    background-color:rgb(255, 223, 223);
+    transition:all 0.4s ease-in-out;
+    /* transition-delay:0.3s;
+    transition-property: fade;
+    transition-timing-function: ease-in-out; */
+
+}
+.list-items-info{
+    /* display:flex; */
+    /* justify-content: center;
+    align-items:center; */
+    padding-top:25px;
+    text-align: center;
+    text-justify: center;
+    vertical-align: center;
+}

@@ -1,4 +1,4 @@
-import { getDB } from "../config/mongodb.js"
+import { getDB } from "../../../config/mongodb.js"
 import UserModel from "./users.model.js"
 import { ObjectId } from "mongodb"
 export default class UserRepository{
