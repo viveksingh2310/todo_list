@@ -9,10 +9,10 @@ export default class UserController{
     return res.redirect('/login');
     }
     static getLogin(req,res){
-        return res.render('login');
+        return res.render('login',{layout:'usr-layout'});// the usr-layout
     }
     static getRegister(req,res){
-        return res.render('register');
+        return res.render('register',{layout:'usr-layout'});// the usr-layout
     }
     static async checkUser(req,res,next){
         const {email}=req.body;
