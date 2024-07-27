@@ -7,8 +7,8 @@ export default class ListController{
         })
     }
     static async add(req,res){
-        const {title,note,date,isImportant,tags}=req.body;
-        const result=ListRepository.add(title,note,date,isImportant,tags);
+        const {title}=req.body;
+        const result=ListRepository.add(title);
         if(!result)
             return res.render('error',{content:'A bad Request is being requested from the server'});
          await ListController.get(req,res);// the updated items will be displayed easily

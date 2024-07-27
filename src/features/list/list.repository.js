@@ -7,8 +7,9 @@ export default class ListRepository{
         const result= await db.collection('list').find().toArray();
         return result
     }
-    static async add(title,note,date,isImportant,tags){
-        const newItem=new ListModel(title,note,date,isImportant,tags);
+    static async add(title){
+        const date=new Date(Date.now()).toLocaleString();
+        const newItem=new ListModel(title,null,date,false,null);
         const db=await getDB();
         const result=await db.collection('list').insertOne(newItem);
         return result;

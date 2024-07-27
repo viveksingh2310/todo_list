@@ -6,8 +6,25 @@
     text-align:start;
     padding-top:5vh;
     }
+.list-container{
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+ align-content: end;
+}
+.my-day-list::-webkit-scrollbar {
+    display: none;
+  } 
+  /* Hide scrollbar for IE, Edge and Firefox */
 .my-day-list{
+    background-color:rgb(174, 201, 219);
     margin-top:3.5vh;
+    border-radius:30px;
+    scroll-behavior: smooth;
+    max-height:60vh;
+    overflow:auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .todo-list-items{
     /* margin-top:1vh; */
@@ -32,4 +49,17 @@
     height:50px;
     padding-top:10px;
     cursor: pointer;
+}
+.add-div{
+ /* background-color:red; */
+ position:fixed;
+ bottom:0px;
+ height:10vh;
+ left:relative;
+}
+.add-new-task{
+    width:10vw;
+}
+.add-new-task:focus{
+    transition:all 5000s ease-in-out;
 }

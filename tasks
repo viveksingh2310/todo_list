@@ -3,4 +3,7 @@ we have to make the following views inside the views folder
 error.ejs
 register.ejs
 login.ejs
-list.ejs(done)
+list.ejs(done)- add the different functionality :- 
+    1)making a todo important
+    2)marking a task as done and puttin it inside done List
+    3)Updating a task
