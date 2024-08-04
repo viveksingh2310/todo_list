@@ -4,6 +4,15 @@ error.ejs
 register.ejs
 login.ejs
 list.ejs(done)- add the different functionality :- 
-    1)making a todo important
-    2)marking a task as done and puttin it inside done List
-    3)Updating a task
+    1)making a todo important (we have to update the view and provide neccessary js for the button click)
+    2)marking a task as done and puttin it inside done List(changing view and makring a new field of isDone in mongodb as well)
+    3)Updating a task(updating the view and addition of the new cdontainer for updation purposes of the task)
+
+/*
+Future features they should be handled later while implementing the incremental model in the website:-
+1)Integration of the Google Calendar API
+2)Email-based authentication on registering and for login the cookies should be used
+3)Generating the user performance based on the task he/she has done on weekly or monthly basis
+
+
+  */
