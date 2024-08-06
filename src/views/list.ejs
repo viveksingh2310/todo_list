@@ -4,12 +4,17 @@
     <div class="my-day-list">
             <%items.forEach((ele)=>{%>
     <%console.log('heeeeeeeeeeeeeee')%>
-    <!-- <div class="form-check todo-list-items"> -->
+    <div class="form-check todo-list-items">
           <input class="form-check-input todo-item-check" type="checkbox" id="flexCheckDefault<%=ele._id%>" style="margin-top:15px" >
-            <label class="form-check-label todo-item-content" for="flexCheckDefault<%=ele._id%>">
+            <label class="form-check-label todo-item-content" for="flexCheckDefault<%=ele._id%>" >
+              <div class="task-title">
               <%=ele.title%>
+              </div>
+              <!-- <button class='update-btn btn-primary'>Mark important</button> -->
             </label>
-            <br/>
+           
+            </div>
+
     <%})%>
     </div>
     <div class="add-div container">

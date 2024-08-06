@@ -1,13 +1,6 @@
 console.log('hello you are qwwwwwwwwwwwwwwww')
 $("#add-new-task").focus();
-// $("#add-new-task").on($(selector).keydown(function (e) { 
-    
-// });)
-// $('.form-class').onsubmit(function(event){
-//     event.preventDefault();
-// })
 $(".sub-btn").click(function(ve){
-// console.log(returnAndEmptyInput());
 if(document.getElementById('add-new-task').value!=""){
 fetch('/list',{method:'PUT',
     headers:{ 'Content-Type': 'application/json'},
@@ -17,15 +10,20 @@ fetch('/list',{method:'PUT',
 })
 }
 });
+
+$('.form-check-label').hover(function(){
+const editButton=$("<span><button class='edit-btn' >Edit</button></span>")
+    const impButton=$("<span><button class='imp-btn' >Mark important</button></span>")
+    $(this).append(impButton);
+    $(this).append(editButton);
+ 
+},function(){
+ $('.imp-btn').remove();
+ $('.edit-btn').remove();
+})
+
 function returnAndEmptyInput(){
     const ele=document.querySelector(".add-new-task").value;
     document.querySelector(".add-new-task").value=''
     return ele
 }
-// (function (e) { 
-//     if(e.key=='Enter')
-//         console.log($("#add-new-task").text());
-// });
-// function sumbitEvent(){
-//     console.log('bitch you are not working ')
-// }
