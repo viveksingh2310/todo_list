@@ -10,7 +10,7 @@ import UserRouter from './src/features/users/users.routes.js'
 const app=express()
 app.use(express.json());
 app.use(express.static(path.join(path.resolve(),'public')));
-
+app.use(bodyParser.urlencoded({ extended:true }))
 console.log('pathis')
 console.log(path.join(path.resolve(),'public'))
 

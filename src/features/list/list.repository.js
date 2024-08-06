@@ -2,10 +2,19 @@ import { ObjectId } from "mongodb";
 import { getDB } from "../../../config/mongodb.js";
 import ListModel from "./list.model.js";
 export default class ListRepository{
-    static async get(){
+    static async get(){//return a list item
         const db=await getDB();
         const result= await db.collection('list').find().toArray();
         return result
+    }
+    static async checkImp(id){
+        const db=await getDB();
+        // console.log('its runnign'+id)
+        const ele=await db.collection('list').findOne({_id:new ObjectId(id)})
+        // console.log('element is'+ele.isImportant);
+        if(ele.isImportant)
+            return true
+        return false;
     }
     static async add(title){
         const date=new Date(Date.now()).toLocaleString();

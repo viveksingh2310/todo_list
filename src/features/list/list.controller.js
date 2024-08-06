@@ -34,4 +34,10 @@ export default class ListController{
             return res.render('error',{content:"the updation operation could not be processed dut to wrong request"})
         await ListController.get(req,res);
     }
+    static async checkImp(req,res){
+        const {id}=req.body;
+        const result=await ListRepository.checkImp(id);
+        console.log('the element you clicked is : '+result)
+         return res.send({response:result.toString()});
+    }
 }
