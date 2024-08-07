@@ -1,5 +1,27 @@
 
 <div class="container-fluid list-container">
+  <div class="edit-div" id="edit-div">
+  <h1>Edit Task</h1>
+  <form>
+    <label for="edit-title">
+      Task Title:
+    </label>
+    <input type="text" id='edit-title'>
+    <br/>
+    <label for="edit-tags">
+      Tags : 
+    </label>
+<input type="text" id="edit-tags" >
+<br/>
+<label for="edit-datetime">
+  Date
+</label>
+<input type="datetime-local" id="edit-datetime" >
+<br/>
+<button type="submit" class="btn btn-primary">Submit</button>
+<button class="btn btn-primary">Cancel</button>
+  </form>
+  </div>
     <div class="head row-12">My Day</div>
     <div class="my-day-list">
             <%items.forEach((ele)=>{%>
@@ -10,7 +32,7 @@
               <div class="task-title">
               <%=ele.title%>
               </div>
-              <!-- <button class='update-btn btn-primary'>Mark important</button> -->
+              <!-- <button class=' btn-primary'>Mark important</button> -->
             </label>
            
             </div>
