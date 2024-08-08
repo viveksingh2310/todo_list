@@ -20,5 +20,6 @@ Future features they should be handled later while implementing the incremental 
   /*
   
   1)making the code of list.js clean and organized with the help of functions without interfering the present outcomes in UI/UX
-  2)Figuring out the groups feature in the website
+2) tags aggregation 
+  3)Figuring out the groups feature in the website
   */
