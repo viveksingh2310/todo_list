@@ -23,5 +23,4 @@ Future features they should be handled later while implementing the incremental 
   3)adding the control flow to add the updated data to the mongodb through sucesfull put request to the API
   4)making the code of list.js clean and organized with the help of functions without interfering the present outcomes in UI/UX
   4)Figuring out the groups feature in the website
-  
   */
