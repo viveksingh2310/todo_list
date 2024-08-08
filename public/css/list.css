@@ -1,5 +1,4 @@
 .head{
-    /* background-color:red; */
     height:20vh;
     font-size:50px;
     font-weight:500;
@@ -15,21 +14,21 @@
 .my-day-list::-webkit-scrollbar {
     display: none;
   } 
-  /* Hide scrollbar for IE, Edge and Firefox */
 .my-day-list{
-    /* background-color:rgb(174, 201, 219); */
+  
     margin-top:3.5vh;
     border-top-right-radius:30px;
     border-bottom-right-radius:30px;
     scroll-behavior: smooth;
     max-height:60vh;
     overflow:auto;
-    /* flex-direction: column;
-    display: flex; */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
 }
-
+#edit-note{
+    margin-left:70px;
+    margin-top:-20px;
+}
 .todo-item-check{
     margin-left:30px;
     margin-top:10px;
@@ -40,7 +39,6 @@
 }
 
 .add-div{
- /* background-color:red; */
  position:fixed;
  bottom:0px;
  height:10vh;
@@ -56,17 +54,11 @@
     max-width: max-content;
 }
 .todo-list-items{
-    /* margin-top:1vh; */
-    /* padding-left:10px; */
-    /* display:flex; */
     height:8vh;
-   /* background-color:rgb(196, 199, 121); */
    border-radius:8px;
    padding:2vh;
-   /* justify-items: center; */
    display:flex;
    flex-direction:row;
-   /* align-items: center; */
 }
 .todo-item-content{
     width:65vw;
@@ -74,11 +66,7 @@
     padding-top:10px;
     cursor: pointer;
      display:flex;
-    /* align-content: end; */
-    flex-direction:row; 
-    /* flex-flow:row;
-    flex-basis:auto; */
-    /* align-self:flex-start; */
+    flex-direction:row;
 }
 #imp-btn,#edit-btn{
     background-color:rgb(0, 154, 26);
@@ -87,14 +75,10 @@
     margin-left:10px;
     margin-right:10px;
     padding:5px;
-    /* transition:all 1s ease-in-out; */
     border:0px transparent solid;
     border-radius:10px;
-    /* flex-basis:; */
     align-self:flex-start;
     justify-self:flex-end;
-    /* position:fixed; */
-    /* right:auto; */
 }
 #edit-div{
   transition: all 1s ease-in-out;
@@ -109,7 +93,6 @@
     display:none;
     animation-name:showSideBar;
     animation-duration:1s;
-    /* float:right; */
 }
 
 @keyframes showSideBar {
@@ -117,18 +100,23 @@
         height:100vh;
         width:5vw;
     }
-    /* 25%  {opacity:25%;
-        height:25vh;
-    }
-    50%  {opacity:50%;  height:50vh;
-    }
-    70% {opacity:70%;  height:70vh;
-    } */
     100% {opacity:100%;  height:100vh;width:30vw;
     }
     
 }
-
-/* .imp-btn:hover,.edit-btn:hover{
-    transition: all 1s ease-in-out;
+/* .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999; 
+    transition: opacity 1s ease-in-out;
+}
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto; 
 } */

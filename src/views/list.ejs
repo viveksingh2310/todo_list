@@ -2,23 +2,29 @@
 <div class="container-fluid list-container">
   <div class="edit-div" id="edit-div">
   <h1>Edit Task</h1>
-  <form>
+  <form id="edit-form">
     <label for="edit-title">
       Task Title:
     </label>
-    <input type="text" id='edit-title'>
+    <input type="text" id='edit-title' name="edit-title">
     <br/>
     <label for="edit-tags">
       Tags : 
     </label>
-<input type="text" id="edit-tags" >
+<input type="text" id="edit-tags" name="edit-tags">
 <br/>
-<label for="edit-datetime">
+<label for="edit-date">
   Date
 </label>
-<input type="datetime-local" id="edit-datetime" >
+<input type="text" id="edit-date" placeholder="dd-mm-yyyy" name="edit-date">
 <br/>
-<button type="submit" class="btn btn-primary">Submit</button>
+<label >
+  Notes : 
+</label><br/>
+<textarea type="textarea" rows="10" cols="20" id="edit-note" name="edit-note"></textarea>
+<br/>
+
+<button type="submit" class="btn btn-primary edit-save">Submit</button>
 <button class="btn btn-primary">Cancel</button>
   </form>
   </div>

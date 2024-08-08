@@ -1,0 +1,21 @@
+.tags-contianer {
+    background-color:red;
+}
+/* CSS for white overlay 
+/* .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 1s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto; 
+} */

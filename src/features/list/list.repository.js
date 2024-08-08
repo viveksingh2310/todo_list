@@ -7,6 +7,13 @@ export default class ListRepository{
         const result= await db.collection('list').find().toArray();
         return result
     }
+    static async getById(id){
+        const db=await getDB();
+        const listItem=await db.collection('list').findOne({_id:new ObjectId(id)});
+        if(listItem)
+            return listItem
+        return undefined
+    }
     static async checkImp(id){
         const db=await getDB();
         // console.log('its runnign'+id)
@@ -17,7 +24,7 @@ export default class ListRepository{
         return false;
     }
     static async add(title){
-        const date=new Date(Date.now()).toLocaleString();
+        const date=new Date(Date.now()).toLocaleDateString();
         const newItem=new ListModel(title,null,date,false,null);
         const db=await getDB();
         const result=await db.collection('list').insertOne(newItem);
@@ -29,9 +36,9 @@ export default class ListRepository{
         return result;
     }
     static async update(id,content){
-        const {title,note,date,isImportant,tags}=content;
+        const {title,note,date,tags}=content;
        const db=await getDB();
-        const result=await db.collection('list').findOneAndUpdate({_id:new ObjectId(id)},{$set:{title,note,date,isImportant,tags}});
+        const result=await db.collection('list').findOneAndUpdate({_id:new ObjectId(id)},{$set:{title,note,date,tags}});
         return result;
     }    
     static async addToImportant(id){

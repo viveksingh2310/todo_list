@@ -6,6 +6,9 @@ export default class ListController{
             items:items
         })
     }
+    static getTags(req,res){
+        return res.render('tags',{content:null});
+    }
     static async add(req,res){
         const {title}=req.body;
         const result=ListRepository.add(title);
@@ -25,7 +28,7 @@ export default class ListController{
         const result =await ListRepository.update(id,updatedItem);
         if(!result)
             return res.render('error',{content:"the updation operation could not be processed dut to wrong request"})
-       await ListController.get(req,res);
+        res.redirect('/list')
     }
     static async addToImportant(req,res){
         const {id}=req.body;
@@ -39,5 +42,13 @@ export default class ListController{
         const result=await ListRepository.checkImp(id);
         console.log('the element you clicked is : '+result)
          return res.send({response:result.toString()});
+    }
+    static async getById(req,res){
+        const {id}=req.body
+        const listItem=await ListRepository.getById(id)
+        if(listItem)
+            return res.send({item:listItem})
+        return res.send({item:null})
+
     }
 }
