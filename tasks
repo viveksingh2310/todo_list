@@ -13,14 +13,13 @@ Future features they should be handled later while implementing the incremental 
 1)Integration of the Google Calendar API
 2)Email-based authentication on registering and for login the cookies should be used
 3)Generating the user performance based on the task he/she has done on weekly or monthly basis
-
-
+/*
+Keep the following these things in the mind:-
+1)uncomment the list.css, list.js , tags.css , tags.js for page overlay functionality which provide page transition
+*/
   */
-  ///Current task at 4 pm
+  ///Daily tasks
   /*
-  1) make a get request to get only one item for updattion with changes in repository and controller 
-  2)fetching one list data from the get request to the api and updating the view with it succesfully
-  3)adding the control flow to add the updated data to the mongodb through sucesfull put request to the API
-  4)making the code of list.js clean and organized with the help of functions without interfering the present outcomes in UI/UX
-  4)Figuring out the groups feature in the website
+  1)Make and initialize the structure of the tags.ejs
+
   */
