@@ -21,5 +21,11 @@ Keep the following these things in the mind:-
   ///Daily tasks
   /*
   1)Make and initialize the structure of the tags.ejs
-
+  2)Making the UI/UX of the tags of the website.
+  3)
+  */
+  /*Solution :-  1)Make and initialize the structure of the tags.ejs
+  To display some of the common tags of the list present in the db.
+  list DB====>Aggreation======>search the particular tag======>If present then return the desired document Else the page will be delivered that will say 'No todo found that particular tag'
+  For displaying the common tags we wil use $avg method to the list db to find the average number of the todo tasks for each task out there and return the desire tags that have more number than the avg task for the particular tags to the landing page of the tags
   */

@@ -4,7 +4,9 @@ import ListModel from "./list.model.js";
 export default class ListRepository{
     static async get(){//return a list item
         const db=await getDB();
+        console.log('hello the db w working')
         const result= await db.collection('list').find().toArray();
+        console.log('hello the db is working')
         return result
     }
     static async getById(id){

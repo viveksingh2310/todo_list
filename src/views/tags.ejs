@@ -1,8 +1,15 @@
 <div class="tags-contianer container">
     <div class="row">
-        <div class="col">
-            Hello world this is the tag container
+        <% if(content==null) {%>
+        <div class="col cont1">
+            Hello world this is mmmmthe tag container
         </div>
+        <%} else{ %>
+            <div class="col">
+                hello this time the content is passed succesfully 
+                <%= content %>
+            </div>
+            <%} %>
     </div>
 
 </div>
